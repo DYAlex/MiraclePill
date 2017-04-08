@@ -8,20 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		89B88E501D33495F00EA1578 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89B88E4F1D33495F00EA1578 /* AppDelegate.swift */; };
-		89B88E521D33495F00EA1578 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89B88E511D33495F00EA1578 /* ViewController.swift */; };
+		89B88E521D33495F00EA1578 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89B88E511D33495F00EA1578 /* MainVC.swift */; };
 		89B88E551D33495F00EA1578 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89B88E531D33495F00EA1578 /* Main.storyboard */; };
 		89B88E571D33495F00EA1578 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 89B88E561D33495F00EA1578 /* Assets.xcassets */; };
 		89B88E5A1D33495F00EA1578 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89B88E581D33495F00EA1578 /* LaunchScreen.storyboard */; };
+		EB5F86491E987158009FF3EB /* SuccessVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB5F86481E987158009FF3EB /* SuccessVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		89B88E4C1D33495F00EA1578 /* MiraclePill.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MiraclePill.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		89B88E4F1D33495F00EA1578 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		89B88E511D33495F00EA1578 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		89B88E511D33495F00EA1578 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		89B88E541D33495F00EA1578 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		89B88E561D33495F00EA1578 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		89B88E591D33495F00EA1578 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		89B88E5B1D33495F00EA1578 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EB5F86481E987158009FF3EB /* SuccessVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SuccessVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,11 +57,12 @@
 			isa = PBXGroup;
 			children = (
 				89B88E4F1D33495F00EA1578 /* AppDelegate.swift */,
-				89B88E511D33495F00EA1578 /* ViewController.swift */,
+				89B88E511D33495F00EA1578 /* MainVC.swift */,
 				89B88E531D33495F00EA1578 /* Main.storyboard */,
 				89B88E561D33495F00EA1578 /* Assets.xcassets */,
 				89B88E581D33495F00EA1578 /* LaunchScreen.storyboard */,
 				89B88E5B1D33495F00EA1578 /* Info.plist */,
+				EB5F86481E987158009FF3EB /* SuccessVC.swift */,
 			);
 			path = MiraclePill;
 			sourceTree = "<group>";
@@ -90,8 +93,12 @@
 		89B88E441D33495F00EA1578 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				KnownAssetTags = (
+					countryLabel,
+					countryTextField,
+				);
 				LastSwiftUpdateCheck = 0800;
-				LastUpgradeCheck = 0800;
+				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = Devslopes;
 				TargetAttributes = {
 					89B88E4B1D33495F00EA1578 = {
@@ -138,7 +145,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				89B88E521D33495F00EA1578 /* ViewController.swift in Sources */,
+				89B88E521D33495F00EA1578 /* MainVC.swift in Sources */,
+				EB5F86491E987158009FF3EB /* SuccessVC.swift in Sources */,
 				89B88E501D33495F00EA1578 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -180,8 +188,10 @@
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -228,8 +238,10 @@
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -297,6 +309,7 @@
 				89B88E601D33495F00EA1578 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
