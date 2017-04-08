@@ -1,1 +1,1 @@
-#### Everything seeems to working fine
+#### Everything seems to be working fine
